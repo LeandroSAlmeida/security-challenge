@@ -3,13 +3,18 @@ package com.devsuperior.demo.dto;
 import java.time.LocalDate;
 
 import com.devsuperior.demo.entities.Event;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotNull;
 
 public class EventDTO {
 	
 	private Long id;
+	@NotNull
 	private String name;
+	@FutureOrPresent
 	private LocalDate date;
 	private String url;
+	@NotNull
 	private Long cityId;
 	
 	public EventDTO() {

@@ -1,10 +1,12 @@
 package com.devsuperior.demo.dto;
 
 import com.devsuperior.demo.entities.City;
+import jakarta.validation.constraints.NotNull;
 
 public class CityDTO {
 	
 	private Long id;
+	@NotNull
 	private String name;
 	
 	public CityDTO() {
