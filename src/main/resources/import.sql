@@ -1,3 +1,13 @@
+INSERT INTO tb_user (first_name, last_name, email, password) VALUES ('Bob', 'Brown', 'bob@gmail.com', '$2a$10$D4kTp.v8iif83Y9oLAjY..zhFmIrBnKewjJvEi5Wgv5VPI5Ldzp42');
+INSERT INTO tb_user (first_name, last_name, email, password) VALUES ('Maria', 'Green', 'ana@gmail.com', '$2a$10$D4kTp.v8iif83Y9oLAjY..zhFmIrBnKewjJvEi5Wgv5VPI5Ldzp42');
+
+INSERT INTO tb_role (authority) VALUES ('ROLE_OPERATOR');
+INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
+
+INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 2);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 1);
+
 INSERT INTO tb_city(name) VALUES ('São Paulo');
 INSERT INTO tb_city(name) VALUES ('Brasília');
 INSERT INTO tb_city(name) VALUES ('Fortaleza');
