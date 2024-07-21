@@ -10,12 +10,12 @@ import java.time.LocalDate;
 public class EventDTO {
 	
 	private Long id;
-	@NotBlank
+	@NotBlank(message = "Campo requerido")
 	private String name;
-	@FutureOrPresent
+	@FutureOrPresent(message = "A data do evento não pode ser passada")
 	private LocalDate date;
 	private String url;
-	@NotNull
+	@NotNull(message = "Campo requerido")
 	private Long cityId;
 	
 	public EventDTO() {
